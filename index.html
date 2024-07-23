@@ -12,7 +12,7 @@
         <i class="fa fa-user" aria-hidden="true"></i>
         <div class="display">
             <p>Ask me a question</p>
-            <input id="txt" placeholder="Type something......">
+            <input id="input" placeholder="Type something......">
         </div>
         <div class="buttons">
             <button onclick="accept()">Accept</button>
@@ -21,7 +21,7 @@
     </div>
     <script>
         function accept(){
-            const val=document.getElementById("txt");
+            const val=document.getElementById("input");
             const text=val.value;
             if(text=="What is HTML?" || text=="What is JavaScript ?" || text=="What is CSS?" || text=="What is Java?" || text=="Explain arrays in JavaScript")
             {
@@ -31,8 +31,10 @@
                 alert("Invalid Question")
         }
         function decline(){
-            document.getElementById("txt").value = "Enter some thing in the input feild";
+            document.getElementById("input").value = "Enter some thing in the input feild";
         }
     </script>
 </body>
 </html>
+
+
